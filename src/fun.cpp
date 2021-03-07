@@ -43,6 +43,7 @@ unsigned int faStr2(const char* str)
         else if (state == 1 && str[i] != ' ' && F == 1)
         {
             if (str[i] >= 65 && str[i] <= 90) F = 0;
+            if (str[i] > 122 || str[i] < 65) F = 0;
         }
         i++;
     }
