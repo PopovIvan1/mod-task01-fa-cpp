@@ -73,6 +73,7 @@ unsigned int faStr3(const char* str)
         i++;
     }
     if (state == 1) sum = sum + leng;
+    if (count == 0) return 0;
     sum = sum / (float)count;
     answer = sum;
     if (sum - (float)answer >= 0.5) answer++;
